@@ -1,0 +1,131 @@
+@use '../abstracts' as *;
+
+.hero {
+    background-color: $dark-purple;
+    padding: rem(36px) 4.266666% rem(2px);
+    min-height: rem(446px);
+    position: relative;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: rem(66px);
+    }
+
+    &__nav-cta {
+        margin-top: -0.23em;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__heading {
+        max-width: rem(460px);
+        margin-bottom: .8em;
+
+        strong {
+            font-weight: inherit;
+            text-decoration: underline;
+            text-decoration-color: $bright-green;
+            text-decoration-thickness: rem(3px);
+            text-underline-offset: .14em;
+        }
+    }
+
+    &__cta {
+        margin-bottom: rem(64px);
+    }
+
+    &__illustration {
+        width: 93%;
+        max-width: rem(514px);
+        margin-left: rem(16px);
+        margin-top: rem(-128px);
+        transform: translateY(rem(128px));
+        z-index: 2;
+    }
+
+    &__curve {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: rem(-50px);
+        z-index: 1;
+
+        path {
+            fill: $dark-purple;
+        }
+    }
+}
+
+@include breakpoint(tablet) {
+    .hero {
+        padding: rem(36px) 5.21% rem(2px) 5.078%;
+        background-image: url(../images/bg-pattern-1.svg), url(../images/bg-pattern-2.svg);
+        background-repeat: no-repeat;
+        background-position: top rem(71px) right 85.3vw, top rem(250px) left 89.65vw;
+
+        &__nav {
+            margin-bottom: rem(58px);
+        }
+    
+        &__heading {
+            margin-bottom: .66em;
+        }
+
+        &__cta {
+            margin-bottom: rem(64px);
+        }
+    
+        &__illustration {
+            margin-left: rem(46px);
+            margin-top: rem(-206px);
+            transform: translateY(rem(198px));
+        }
+    
+        &__curve {
+            bottom: rem(-82px);
+            height: 140px;
+        }
+    }
+}
+
+@include breakpoint(desktop) {
+    .hero {
+        padding: rem(57px) 11.4583% rem(2px);
+        background-position: top rem(116px) right 86vw, top rem(314px) left 91.3vw;
+
+        &__nav {
+            margin-bottom: rem(57px);
+        }
+
+        &__nav-cta {
+            margin-top: 0;
+        }
+    
+        &__heading {
+            max-width: rem(635px);
+            margin-bottom: .46em;
+        }
+
+        &__cta {
+            margin-bottom: rem(58px);
+        }
+    
+        &__illustration {
+            max-width: rem(767px);
+            margin-left: rem(48px);
+            margin-top: rem(-266px);
+            transform: translateY(rem(258px));
+        }
+    
+        &__curve {
+            bottom: rem(-155px);
+            height: 264px;
+        }
+    }
+}

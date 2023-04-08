@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.hero__nav-cta {
+    text-decoration-thickness: rem(3px);
+    text-underline-offset: .55em;
+}
+
+.hero__cta,
+.cta__cta {
+    text-decoration: none;
+    padding: .558em 1.369em .63em;
+    background-color: $bright-green;
+    color: $dark-purple;
+    border: rem(2px) solid $bright-green;
+
+    &:hover {
+        background-color: transparent;
+        color: $bright-green !important;
+    }
+}
+
+.cta__cta {
+    padding-top: .871em;
+    padding-bottom: .943em;
+}
+
+@include breakpoint(desktop) {
+    .hero__cta,
+    .cta__cta {
+        padding: .678em 1.698em .75em;
+    }
+    
+    .cta__cta {
+        padding: .86em 1.297em .9737em;
+    }
+}

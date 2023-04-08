@@ -1,0 +1,51 @@
+@use '../abstracts' as *;
+
+.footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(64px) 4.266666%;
+
+    &__socials {
+        margin-top: rem(56px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(28px);
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+
+        a svg path {
+            fill: $purplish-grey;
+            transition: fill .18s ease-in-out;
+        }
+
+        a:hover svg path {
+            fill: $dark-purple;
+        }
+    }
+}
+
+@include breakpoint(tablet) {
+    .footer {
+        padding: rem(70px) 5.21% rem(121px) 5.078%;
+
+        &__socials {
+            margin-top: rem(57px);
+        }
+    }
+}
+
+@include breakpoint(desktop) {
+    .footer {
+        padding: rem(111px) 11.4583% rem(110px) 11.32%;
+
+        &__socials {
+            margin-top: rem(57px);
+        }
+    }
+}

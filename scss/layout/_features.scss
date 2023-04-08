@@ -1,0 +1,119 @@
+@use '../abstracts' as *;
+
+.features {
+    padding: rem(190px) 4.266666% rem(37px);
+    background-color: $ghost-white;
+    position: relative;
+
+    &__container {
+        margin: auto;
+        max-width: rem(400px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5em;
+        text-align: center;
+    }
+
+    &__marker {
+        display: inline-block;
+        font-family: fraunces;
+        font-size: rem(20px);
+        line-height: 1.8;
+        color: $dark-purple;
+        border: 1px solid $purplish-grey;
+        border-radius: 50%;
+        padding: .2em .8em;
+        min-width: rem(46px);
+        margin-bottom: 1.2em;
+    }
+
+    &__heading {
+        font-size: rem(28px);
+        line-height: 1.2857;
+        margin-bottom: .58em;
+    }
+
+    &__curve {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: rem(-50px);
+        z-index: -1;
+
+        path {
+            fill: $ghost-white;
+        }
+    }
+}
+
+@include breakpoint(tablet) {
+    .features {
+        padding: rem(252px) 5.21% rem(37px) 5.078%;
+
+        &__container {
+            max-width: rem(573px);
+            flex-direction: column;
+            gap: 3em;
+            text-align: left;
+        }
+
+        &__item {
+            display: flex;
+            gap: rem(33px);
+            align-items: center;
+        }
+
+        &__marker {
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        &__heading {
+            margin-bottom: .57em;
+        }
+
+        &__curve {
+            height: rem(150px);
+            bottom: rem(-104px);
+        }
+    }
+}
+
+@include breakpoint(desktop) {
+    .features {
+        padding: rem(347px) 11.1805% rem(38px) 11.4583%;
+        
+        &__container {
+            max-width: rem(1476px);
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 1.4185em;
+            text-align: center;
+        }
+
+        &__item {
+            width: 31.777%;
+            flex-direction: column;
+            gap: rem(56px);
+        }
+
+        &__marker {
+            font-size: rem(24px);
+            line-height: 1.6666666;
+            padding: .29235em .8em;
+            min-width: rem(56px);
+        }
+
+        &__heading {
+            font-size: rem(32px);
+            line-height: 1.25;
+            margin-bottom: .85em;
+        }
+
+        &__curve {
+            height: rem(275px);
+            bottom: rem(-200px);
+        }
+    }
+}

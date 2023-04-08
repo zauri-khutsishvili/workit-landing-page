@@ -1,0 +1,107 @@
+@use '../abstracts' as *;
+
+.cta {
+    padding: rem(135px) 4.266666% rem(10px);
+
+    &__container {
+        margin: auto;
+        max-width: rem(921px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    &__image {
+        width: 81.9%;
+        max-width: rem(281px);
+        z-index: -1;
+        margin-bottom: rem(-53px);
+    }
+
+    &__content {
+        background-color: $dark-purple;
+        text-align: center;
+        padding: 2.05em 1.9em 2.75em;
+        max-width: rem(514px);
+    }
+
+    &__heading {
+        margin-bottom: .47em;
+    }
+
+    &__description {
+        margin-bottom: 2.15em;
+    }
+}
+
+@include breakpoint(tablet) {
+    .cta {
+        padding: rem(167px) 5.21% rem(10px) 5.078%;
+
+        &__image {
+            align-self: flex-start;
+            width: 40.78%;
+            max-width: rem(374px);
+            margin-bottom: rem(-130px);
+        }
+
+        &__content {
+            align-self: flex-end;
+            width: 74.6%;
+            max-width: rem(730px);
+            text-align: left;
+            padding: 3em 3.5em 4.25em;
+
+            &::after {
+                content: url(../images/bg-pattern-3.svg);
+                position: absolute;
+                bottom: rem(-114px);
+                right: rem(12px);
+            }
+        }
+
+        &__heading {
+            margin-bottom: .5em;
+        }
+
+        &__description {
+            margin-bottom: 2.19em;
+        }
+    }
+}
+
+@include breakpoint(desktop) {
+    .cta {
+        padding: rem(242px) 11.4583% rem(10px) 11.32%;
+
+        &__container {
+            max-width: rem(1476px);
+        }
+
+        &__image {
+            width: 42.9%;
+            max-width: rem(570px);
+            margin-bottom: rem(-304px);
+        }
+
+        &__content {
+            width: 65.647%;
+            max-width: none;
+            padding: 3.6em 3.55em 4.347em;
+
+            &::after {
+                bottom: rem(-72px);
+                right: rem(72px);
+            }
+        }
+
+        &__heading {
+            margin-bottom: .59em;
+        }
+
+        &__description {
+            margin-bottom: 2.5em;
+        }
+    }
+}
