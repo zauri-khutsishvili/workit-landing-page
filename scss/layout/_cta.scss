@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .cta {
-    padding: rem(135px) 4.266666% rem(10px);
+    padding: rem(135px) $mobile rem(10px);
 
     &__container {
         margin: auto;
@@ -37,7 +37,7 @@
 
 @include breakpoint(tablet) {
     .cta {
-        padding: rem(167px) 5.21% rem(10px) 5.078%;
+        padding: rem(167px) $tablet rem(10px);
 
         &__image {
             align-self: flex-start;
@@ -73,7 +73,7 @@
 
 @include breakpoint(desktop) {
     .cta {
-        padding: rem(242px) 11.4583% rem(10px) 11.32%;
+        padding: rem(242px) $desktop rem(10px);
 
         &__container {
             max-width: rem(1476px);

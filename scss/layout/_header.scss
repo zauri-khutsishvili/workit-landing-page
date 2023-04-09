@@ -2,7 +2,7 @@
 
 .hero {
     background-color: $dark-purple;
-    padding: rem(36px) 4.266666% rem(2px);
+    padding: rem(36px) $mobile rem(2px);
     min-height: rem(446px);
     position: relative;
 
@@ -64,7 +64,7 @@
 
 @include breakpoint(tablet) {
     .hero {
-        padding: rem(36px) 5.21% rem(2px) 5.078%;
+        padding: rem(36px) $tablet rem(2px);
         background-image: url(../images/bg-pattern-1.svg), url(../images/bg-pattern-2.svg);
         background-repeat: no-repeat;
         background-position: top rem(71px) right 85.3vw, top rem(250px) left 89.65vw;
@@ -96,7 +96,7 @@
 
 @include breakpoint(desktop) {
     .hero {
-        padding: rem(57px) 11.4583% rem(2px);
+        padding: rem(57px) $desktop rem(2px);
         background-position: top rem(116px) right 86vw, top rem(314px) left 91.3vw;
 
         &__nav {

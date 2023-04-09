@@ -1,3 +1,5 @@
+/*Colors*/
+/*Paddings*/
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -77,17 +79,6 @@ a {
   font-weight: 700;
   line-height: 2;
   letter-spacing: -0.01em;
-  transition: color 0.18s ease-in-out, background-color 0.18s ease-in-out;
-}
-a:hover {
-  color: hsl(150, 100%, 63%);
-}
-
-.light a {
-  text-decoration-color: hsl(273, 85%, 13%);
-}
-.light a:hover {
-  color: hsl(273, 85%, 13%);
 }
 
 @media (min-width: 720px) {
@@ -174,7 +165,7 @@ a:hover {
 
 @media (min-width: 720px) {
   .hero {
-    padding: 2.25rem 5.21% 0.125rem 5.078%;
+    padding: 2.25rem 5.21% 0.125rem;
     background-image: url(../images/bg-pattern-1.svg), url(../images/bg-pattern-2.svg);
     background-repeat: no-repeat;
     background-position: top 4.4375rem right 85.3vw, top 15.625rem left 89.65vw;
@@ -272,7 +263,7 @@ a:hover {
 
 @media (min-width: 720px) {
   .features {
-    padding: 15.75rem 5.21% 2.3125rem 5.078%;
+    padding: 15.75rem 5.21% 2.3125rem;
   }
   .features__container {
     max-width: 35.8125rem;
@@ -299,7 +290,7 @@ a:hover {
 }
 @media (min-width: 1200px) {
   .features {
-    padding: 21.6875rem 11.1805% 2.4375rem 11.4583%;
+    padding: 21.6875rem 11.4583% 2.4375rem;
   }
   .features__container {
     max-width: 92.25rem;
@@ -362,7 +353,7 @@ a:hover {
 
 @media (min-width: 720px) {
   .cta {
-    padding: 10.4375rem 5.21% 0.625rem 5.078%;
+    padding: 10.4375rem 5.21% 0.625rem;
   }
   .cta__image {
     align-self: flex-start;
@@ -392,7 +383,7 @@ a:hover {
 }
 @media (min-width: 1200px) {
   .cta {
-    padding: 15.125rem 11.4583% 0.625rem 11.32%;
+    padding: 15.125rem 11.4583% 0.625rem;
   }
   .cta__container {
     max-width: 92.25rem;
@@ -446,7 +437,7 @@ a:hover {
 
 @media (min-width: 720px) {
   .footer {
-    padding: 4.375rem 5.21% 7.5625rem 5.078%;
+    padding: 4.375rem 5.21% 7.5625rem;
   }
   .footer__socials {
     margin-top: 3.5625rem;
@@ -454,7 +445,7 @@ a:hover {
 }
 @media (min-width: 1200px) {
   .footer {
-    padding: 6.9375rem 11.4583% 6.875rem 11.32%;
+    padding: 6.9375rem 11.4583% 6.875rem;
   }
   .footer__socials {
     margin-top: 3.5625rem;
@@ -463,6 +454,20 @@ a:hover {
     margin-top: 0.0625rem;
   }
 }
+a {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+a:hover {
+  color: hsl(150, 100%, 63%);
+}
+
+.light a {
+  text-decoration-color: hsl(273, 85%, 13%);
+}
+.light a:hover {
+  color: hsl(273, 85%, 13%);
+}
+
 .hero__nav-cta {
   text-decoration-thickness: 0.1875rem;
   text-underline-offset: 0.5em;

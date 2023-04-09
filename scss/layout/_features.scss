@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .features {
-    padding: rem(190px) 4.266666% rem(37px);
+    padding: rem(190px) $mobile rem(37px);
     background-color: $ghost-white;
     position: relative;
 
@@ -49,7 +49,7 @@
 
 @include breakpoint(tablet) {
     .features {
-        padding: rem(252px) 5.21% rem(37px) 5.078%;
+        padding: rem(252px) $tablet rem(37px);
 
         &__container {
             max-width: rem(573px);
@@ -82,7 +82,7 @@
 
 @include breakpoint(desktop) {
     .features {
-        padding: rem(347px) 11.1805% rem(39px) 11.4583%;
+        padding: rem(347px) $desktop rem(39px);
         
         &__container {
             max-width: rem(1476px);

@@ -1,5 +1,21 @@
 @use '../abstracts' as *;
 
+a {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out;
+
+    &:hover {
+        color: $bright-green;
+    }
+}
+
+.light a {
+    text-decoration-color: $dark-purple;
+
+    &:hover {
+        color: $dark-purple;
+    }
+}
+
 .hero__nav-cta {
     text-decoration-thickness: rem(3px);
     text-underline-offset: .5em;

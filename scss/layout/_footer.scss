@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: rem(64px) 4.266666%;
+    padding: rem(64px) $mobile;
 
     &__socials {
         margin-top: rem(56px);
@@ -32,7 +32,7 @@
 
 @include breakpoint(tablet) {
     .footer {
-        padding: rem(70px) 5.21% rem(121px) 5.078%;
+        padding: rem(70px) $tablet rem(121px);
 
         &__socials {
             margin-top: rem(57px);
@@ -42,7 +42,7 @@
 
 @include breakpoint(desktop) {
     .footer {
-        padding: rem(111px) 11.4583% rem(110px) 11.32%;
+        padding: rem(111px) $desktop rem(110px);
 
         &__socials {
             margin-top: rem(57px);
