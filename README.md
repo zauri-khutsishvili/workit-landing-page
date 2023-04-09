@@ -1,11 +1,11 @@
 # Frontend Mentor - Equalizer landing page solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
+This is a solution to the [Workit landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/workit-landing-page-2fYnyle5lu).
 
 ## Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/interactive-rating-component-XQPH8DQecX](https://www.frontendmentor.io/solutions/interactive-rating-component-XQPH8DQecX)
-- Live Site URL: [https://zauri-khutsishvili.github.io/interactive-rating-component/](https://zauri-khutsishvili.github.io/interactive-rating-component/)
+- Solution URL: [https://www.frontendmentor.io/solutions/workit-landing-page-PqpVZM6x1y](https://www.frontendmentor.io/solutions/workit-landing-page-PqpVZM6x1y)
+- Live Site URL: [https://zauri-khutsishvili.github.io/workit-landing-page/](https://zauri-khutsishvili.github.io/workit-landing-page/)
 
 ## Built with
 
