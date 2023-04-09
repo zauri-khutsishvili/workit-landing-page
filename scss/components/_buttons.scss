@@ -2,7 +2,7 @@
 
 .hero__nav-cta {
     text-decoration-thickness: rem(3px);
-    text-underline-offset: .55em;
+    text-underline-offset: .5em;
 }
 
 .hero__cta,
@@ -27,7 +27,7 @@
 @include breakpoint(desktop) {
     .hero__cta,
     .cta__cta {
-        padding: .678em 1.698em .75em;
+        padding: .648em 1.698em .72em;
     }
     
     .cta__cta {

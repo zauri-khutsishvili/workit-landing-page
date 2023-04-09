@@ -82,18 +82,19 @@
 
 @include breakpoint(desktop) {
     .features {
-        padding: rem(347px) 11.1805% rem(38px) 11.4583%;
+        padding: rem(347px) 11.1805% rem(39px) 11.4583%;
         
         &__container {
             max-width: rem(1476px);
             flex-direction: row;
             align-items: flex-start;
+            justify-content: space-evenly;
             gap: 1.4185em;
             text-align: center;
         }
 
         &__item {
-            width: 31.777%;
+            width: 31.5%;
             flex-direction: column;
             gap: rem(56px);
         }
