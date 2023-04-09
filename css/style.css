@@ -208,6 +208,7 @@ a:hover {
   }
   .hero__nav-cta {
     margin-top: 0;
+    transform: translateY(-0.0625rem);
   }
   .hero__heading {
     max-width: 39.6875rem;
@@ -298,7 +299,7 @@ a:hover {
 }
 @media (min-width: 1200px) {
   .features {
-    padding: 21.6875rem 11.1805% 2.4375rem 11.4583%;
+    padding: 21.625rem 11.1805% 2.4375rem 11.4583%;
   }
   .features__container {
     max-width: 92.25rem;
@@ -481,6 +482,10 @@ a:hover {
   color: hsl(150, 100%, 63%) !important;
 }
 
+.hero__cta {
+  text-transform: capitalize;
+}
+
 .cta__cta {
   padding-top: 0.871em;
   padding-bottom: 0.943em;
@@ -489,7 +494,7 @@ a:hover {
 @media (min-width: 1200px) {
   .hero__cta,
   .cta__cta {
-    padding: 0.648em 1.698em 0.72em;
+    padding: 0.65em 1.698em 0.725em;
   }
   .cta__cta {
     padding: 0.86em 1.297em 0.9737em;
